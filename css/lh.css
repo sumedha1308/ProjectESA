@@ -1,0 +1,14 @@
+
+.container{
+  position: absolute;
+  top: 50%;
+  margin-top: -100px;
+  left:250px;
+  right:250px;
+  width:40%;
+}
+.content
+{
+  margin: auto;
+  width: 30%;
+}

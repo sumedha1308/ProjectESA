@@ -1,0 +1,56 @@
+/*.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.navbar li { color: #000 }
+*/
+html,body {
+  height:100%;
+  width:100%;
+  margin:0;
+}
+body , body {
+  display:flex;
+}
+.form-horizontal{
+  margin:auto;
+}
+.form-control
+{
+  width: 160px;
+vertical-align: center;
+margin-left: 30px;
+margin-bottom:20px;
+}
+.panel-default
+{
+  margin-top: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom:auto;
+}
+.enroll-control
+{
+  margin-left: 30px;
+}
+.to-control
+{
+  margin-left: 30px;
+}
+.class-control
+{
+  margin-left: 30px;
+}
+.cl-control
+{
+  margin-left: 30px;
+}
+.sub-control
+{
+  margin-left: 30px;
+}
+.heading-control{
+  margin-top: 50px;
+}
