@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <title>Exam seating arrangement
 </title>
@@ -17,7 +17,7 @@
             <form class="form-horizontal content"role="form">
              <div class="form-group">
                 <label for="name">Branch Name</label>
-                  <!--<input type="text" class="form-control " id="name" placeholder="Branch Name">-->
+
                   <select class="form-control">
                     <option>Computer (6)</option>
                     <optioN>Mechanical (1)</option>
@@ -31,7 +31,7 @@
             </div>
             <div class="form-group">
                 <label for="name">Year</label>
-                  <!--<input type="text" class="form-control" id="name" placeholder="Year">-->
+
                   <select class="form-control">
                     <option>First</option>
                     <optioN>Second</option>
@@ -49,7 +49,7 @@
    </div>
    </div>
  </div>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- jQuery  -->
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
