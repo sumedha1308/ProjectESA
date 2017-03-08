@@ -40,7 +40,7 @@
                </select>
             </div>
             <div class="form-group">
-              <center><a href="branchwisedata.php " type="submit" class="btn btn-default">Submit</a></center>
+              <center><a href="branchyeardata.php " type="submit" class="btn btn-default">Submit</a></center>
 </div>
           </form>
 
