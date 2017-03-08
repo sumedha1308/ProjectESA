@@ -27,7 +27,7 @@
                 </tr>
                 <tr>
                   <td>password :<td>
-                    <td><a href="#">change password</td>
+                    <td><a href="cnangepass.php" target="_blank">change password</td>
                 </tr>
               </table>
             </div></center>
