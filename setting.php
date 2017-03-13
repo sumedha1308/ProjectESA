@@ -1,9 +1,13 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Exam Seating Arrangement</title>
 <link rel="stylesheet" href="css/bootstrap.min.css"/>
 <link rel="stylesheet" href="css/setting.css"/>
+</head>
 <body>
   <div class="container vertical-align">
     <div class="row">
@@ -23,12 +27,12 @@
                 </tr>
                 <tr>
                   <td>password :<td>
-                    <td><a href="">change password</td>
+                    <td><a href="cnangepass.php" target="_blank">change password</td>
                 </tr>
               </table>
             </div></center>
-</form>
-</div>
+         </form>
+      </div>
 </div>
 </div>
 </div>

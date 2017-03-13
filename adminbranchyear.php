@@ -1,6 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Exam seating arrangement
 </title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -20,8 +23,6 @@
           <span class="icon-bar"></span>
         </button>
       </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav navbar-right nave-pills">
@@ -47,7 +48,7 @@
             <form class="form-horizontal content"role="form">
              <div class="form-group">
                 <label for="name">Branch Name</label>
-                  <!--<input type="text" class="form-control " id="name" placeholder="Branch Name">-->
+                  
                   <select class="form-control">
                     <option>Computer (6)</option>
                     <optioN>Mechanical (1)</option>
@@ -61,7 +62,7 @@
             </div>
             <div class="form-group">
                 <label for="name">Year</label>
-                  <!--<input type="text" class="form-control" id="name" placeholder="Year">-->
+
                   <select class="form-control">
                     <option>First</option>
                     <optioN>Second</option>
@@ -79,7 +80,7 @@
    </div>
    </div>
  </div>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- jQuery  -->
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
 

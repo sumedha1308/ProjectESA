@@ -12,7 +12,6 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-
   <div class="container vertical-align">
     <div class="row">
       <div class="col-xs-4 col-xs-push-4" style="background-color: #ffffff;">
@@ -32,7 +31,7 @@
 </div>
 </div>
 </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>

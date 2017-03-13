@@ -107,8 +107,8 @@
                             </div>
                             <div class="form-group">
 
-                                <label for="selectClass" class="cl-control">Class :</label>
-                                <input type="text" class="form-control " id="number" placeholder="Enter start number">
+                                <label for="selectClass" class="cl-control">date:</label>
+                                <label for="selectClass" class="cl-control">time:</label>
                               </div>
 <center><a type="button" href="" class="btn btn-default"><b>insert<b></a>&nbsp&nbsp
 <a type="button" href="datainsert.php" class="btn btn-default"><b>cancel<b></a></center>
