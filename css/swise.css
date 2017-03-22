@@ -14,7 +14,7 @@ body , body {
   margin:auto;
 }
 
-.panel-default
+div.panel-default
 {
   margin-top: 140px;
   margin-left: 10px;
@@ -24,5 +24,10 @@ body , body {
   padding-right:50px;
   padding-bottom:50px;
   padding-top:50px;
+  background-image: url(backimg.jpg) !important;
+  border-radius: 20px;
 
+}
+label.style{
+  color: black;
 }

@@ -10,6 +10,10 @@
 <link rel="stylesheet" href="css/clear1.css"/>
 </head>
 <body>
+  <?php
+  session_start();
+  if (isset($_SESSION['adminname']) && isset($_SESSION['password'])) {
+    ?>
   <div class="container vertical-align">
     <div class="row">
       <div class="col-xs-4 col-xs-push-4" style="background-color: #ffffff;">
@@ -28,6 +32,10 @@
 </div>
 </div>
 </div>
-
+<?php }
+else{
+  $msg="you have not login!";
+  echo "<script type='text/javascript'>alert('$msg');</script>";
+} ?>
 </body>
 </html>

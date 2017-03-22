@@ -19,7 +19,7 @@
             <div class="panel-body">
             <form class="form-horizontal  content" role="form">
              <div class="form-group">
-            <label>Enrollment Number</label>
+            <label class="style">Enrollment Number</label>
             <input type="text" class="form-control " name="rollno" placeholder="Enrollment number"></input>
             </div>
             <div class="form-group">

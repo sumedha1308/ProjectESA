@@ -11,12 +11,22 @@ body , body {
   margin:auto;
 }
 
-.panel-default
+div.panel-default
 {
-  margin-top: 170px;
-  margin-left: 0px;
+
+
+  margin-top: 160px;
+  margin-left: -10px;
   margin-right: 0px;
   margin-bottom:auto;
   padding: 30px 30px 30px 30px;
-  border: 2px solid grey;
+  border: 2px solid blue;
+  border-radius: 2em;
+  background-image: url(backimg.jpg) !important;
+}
+td.textstyle{
+  color: black;
+}
+a.link{
+  color: red;
 }

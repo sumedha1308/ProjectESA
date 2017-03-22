@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/datai.css">
-  <title>Exam Seating Arrangement</title>
-
+  <title>filling of seating arrangement</title>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
 </head>
 <body>
-
+  <?php
+  session_start();
+  if (isset($_SESSION['adminname']) && isset($_SESSION['password'])) {
+    ?>
 <nav class="navbar  navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -36,7 +39,7 @@
             <li  ><a href="profile.php" class="glyphicon glyphicon-user"> Profile</a></li>
             <li><a href="setting.php" class="glyphicon glyphicon-cog"> Setting</a></li>
             <li><a href="clear.php" class="glyphicon glyphicon-trash"> ClearDB</a></li>
-            <li><a href="firstpage.php" class="glyphicon glyphicon-off"> Signout</a></li>
+            <li><a href="logout.php" class="glyphicon glyphicon-off"> Signout</a></li>
           </ul>
         </li>
       </ul>
@@ -46,21 +49,25 @@
 
   <div class="container vertical-align">
     <div class="row">
-      <div class="col-xs-4 col-xs-push-4" style="background-color: #ffffff;">
+      <div class="col-xs-4 col-xs-push-4">
         <div class="heading-control">
         <center><h2>SEATING ARRANGEMENT FILLING<h2></center>
         </div>
           <div class="panel panel-default">
             <div class="panel-body">
             <form class="form-horizontal  content" role="form">
-             <div class="form-group">
-                <label for="numberstart" class="enroll-control">Enrollment Number :</label>
-                  <input type="text" class="form-control " id="number" placeholder="Enter start number">
-                  <label for="numberstart "class="to-control">to</label>
+             <div class="form-group text-control">
+               <div class="row">
+                 <div class="col-xs-7">
+               <label for="numberstart" class="enroll-control">Start number :<font style="color:#FF0000">*</font></label>
+                <input type="text" class="form-control " id="number" placeholder="Enter start number">
+              </div>
+                  <label for="numberstart "class="to-control">End number :<font style="color:#FF0000">*</font></label>
                   <input type="text" class="form-control" id="number" placeholder="Enter end number">
             </div>
+          </div>
             <div class="form-group ">
-              <label for="SelectSubejct" class="sub-control" >Select Subject :
+              <label for="SelectSubejct" class="sub-control" >Select Subject :<font style="color:#FF0000">*</font>
               </label>
                   <select class="form-control">
                     <option>1</option>
@@ -79,8 +86,7 @@
                       </select>
                     </div>
                     <div class="form-group">
-                      <label for="SelectClass" class=" class-control">Select classroom :</label>
-
+                      <label for="SelectClass" class=" class-control">Select classroom :<font style="color:#FF0000">*</font></label>
                           <select class="form-control">
                             <option>LH001</option>
                             <optioN>LH002</option>
@@ -106,11 +112,23 @@
                               </select>
                             </div>
                             <div class="form-group">
+                            	  <label for="examdate" class="class-control">Date :<font style="color:#FF0000">*</font></label><br />
+                              <input class="form-control" placeholder="DD/MM/YYYY" type="date" name="examdate" id="examdate">
 
-                                <label for="selectClass" class="cl-control">date:</label>
-                                <label for="selectClass" class="cl-control">time:</label>
-                              </div>
-<center><a type="button" href="" class="btn btn-default"><b>insert<b></a>&nbsp&nbsp
+                            	  </div>
+
+	                              <div class="form-group">
+                                  <div class="row">
+                                    <div class="col-xs-7">
+                                     	  <label for="examptime1" class="class-control">Start Time:<font style="color:#FF0000">*</font></label>
+                                        <input class="form-control" placeholder="HH:MM" type="time" name="examptime1" id="examptime1"/>
+                                      </div>
+                                        <label for="examptime2" class="class-control">End time :<font style="color:#FF0000">*</font></label>
+                                     	  <input class="form-control" placeholder="HH:MM" type="time" name="examptime2" id="examptime2"/>
+
+                                       </div>
+</div>
+<center><a type="button" href="#" class="btn btn-default"><b>insert<b></a>&nbsp&nbsp
 <a type="button" href="datainsert.php" class="btn btn-default"><b>cancel<b></a></center>
 </form>
 </div>
@@ -118,5 +136,10 @@
 </div>
 </div>
 </div>
+<?php }
+else{
+  $msg="you are not login!";
+  echo "<script type='text/javascript'>alert('$msg');</script>";
+}?>
 </body>
 </html>

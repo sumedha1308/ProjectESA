@@ -23,7 +23,7 @@
                             <div class="col-lg-12">
                                 <div class="row">
                                     <div class="col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
-                                        <img class="img-circle img-responsive" src="images/pecock.jpg">
+                                        <img class="img-circle img-responsive"  src="images/pecock.jpg">
                                     </div>
                                 </div>
                             </div>
@@ -33,10 +33,10 @@
                                 <div class="row">
                                     <div class="centered-text col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
 
-                                            <h2> <span itemprop="name">Alkesha Baikar</span></h2>
-                                                <i class="fa fa-map-marker"></i> <span itemprop="addressRegion">Alibag,Raigad</span>
-                                            </p>
-                                            <p itemprop="email"> <i class="fa fa-envelope"> </i> <a href="mailto:baikaralkesha@gmail.com">baikaralkesha@gmail.com</a> </p>
+                                            <h2> <span itemprop="name" class="textcolor">Alkesha Baikar</span></h2>
+                                                <i class="fa fa-map-marker"></i> <span itemprop="addressRegion" class="add">Alibag,Raigad</span>
+
+                                            <p itemprop="email"> <i class="fa fa-envelope"> </i> <a  class="link" href="mailto:baikaralkesha@gmail.com">baikaralkesha@gmail.com</a> </p>
                                         </div>
                                     </div>
                                 </div>

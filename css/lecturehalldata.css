@@ -1,0 +1,17 @@
+.main-table{
+
+
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: : 20px;
+background-image: url(backimg.jpg) !important;
+border:2px solid black;
+}
+.table-hover{
+  color: black;
+}
+.table-header{
+  background-color: skyblue;
+  border-radius: 20px;
+}

@@ -12,6 +12,10 @@
 <link rel="stylesheet" href="css/classwisepages.css"/>
 </head>
 <body>
+  <?php
+  session_start();
+  if (isset($_SESSION['adminname']) && isset($_SESSION['password'])) {
+    ?>
   <nav class="navbar  navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,7 +36,7 @@
               <li  ><a href="profile.php" class="glyphicon glyphicon-user"> Profile</a></li>
               <li><a href="setting.php" class="glyphicon glyphicon-cog"> Setting</a></li>
               <li><a href="clear.php" class="glyphicon glyphicon-trash"> ClearDB</a></li>
-              <li><a href="firstpage.php" class="glyphicon glyphicon-off"> Signout</a></li>
+              <li><a href="logout.php" class="glyphicon glyphicon-off"> Signout</a></li>
             </ul>
           </li>
         </ul>
@@ -42,16 +46,16 @@
 
   <div class="container ">
     <div class="row">
-      <div class="col-xs-4 col-xs-push-4" style="background-color: #ffffff;">
+      <div class="col-xs-4 col-xs-push-4" >
           <div class="panel panel-default">
             <div class="panel-body">
             <form class="form-horizontal content"role="form">
              <div class="form-group">
-                <label for="name">Branch Name</label>
-                  
+                <label class="control-label" for="name">Branch Name</label>
+
                   <select class="form-control">
                     <option>Computer (6)</option>
-                    <optioN>Mechanical (1)</option>
+                    <option>Mechanical (1)</option>
                     <option>IT (7)</option>
                     <option>Civil (8)</option>
                     <option>Electrical (2)</option>
@@ -65,13 +69,13 @@
 
                   <select class="form-control">
                     <option>First</option>
-                    <optioN>Second</option>
+                    <option>Second</option>
                     <option>Third</option>
                     <option>Fourth</option>
                </select>
             </div>
             <div class="form-group">
-              <center><a href="datainsert.php" type="button" name="submit" class="btn btn-default">Submit</a>&nbsp&nbsp<a href="adminbranchyear,php" type="button" name="cancel" class="btn btn-default">cancel</a></center>
+              <center><a href="datainsert.php" type="button" name="submit" class="btn btn-default">Submit</a>&nbsp&nbsp<a href="adminbranchyear.php" type="button" name="cancel" class="btn btn-default">cancel</a></center>
 </div>
           </form>
 
@@ -80,9 +84,13 @@
    </div>
    </div>
  </div>
+<?php }
+ else{
+  $msg="you are not login!";
+  echo "<script type='text/javascript'>alert('$msg');</script>";
+}?>
   <!-- jQuery  -->
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
 </body>
 </html>

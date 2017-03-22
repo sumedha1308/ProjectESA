@@ -24,33 +24,45 @@ vertical-align: center;
 margin-left: 30px;
 margin-bottom:20px;
 }
-.panel-default
+div.panel-default
 {
   margin-top: 50px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom:auto;
+  margin-left: -20px;
+  margin-right: -70px;
+  margin-bottom:40px;
+padding-right: 50px;
+  background-image : url(backimg.jpg) !important;
+border-radius: 20px;
+
 }
 .enroll-control
 {
   margin-left: 30px;
+color: black;
 }
 .to-control
 {
   margin-left: 30px;
+  color: black;
 }
 .class-control
 {
   margin-left: 30px;
+  color: black;
 }
 .cl-control
 {
   margin-left: 30px;
+  color: black;
 }
 .sub-control
 {
   margin-left: 30px;
+  color: black;
 }
 .heading-control{
   margin-top: 50px;
+}
+div.text-control{
+color: black;
 }

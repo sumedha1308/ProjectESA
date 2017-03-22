@@ -6,12 +6,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="stylesheet" href="css/bootstrap.min.css"/>
 <link rel="stylesheet" href="css/bootstrap.css"/>
-<link rel="stylesheet" href="css/classwisepages.css"/>
+<link rel="stylesheet" href="css/classwisepagetrue.css"/>
 </head>
 <body>
   <div class="container ">
     <div class="row">
-      <div class="col-xs-4 col-xs-push-4" style="background-color: #ffffff;">
+      <div class="col-xs-4 col-xs-push-4">
           <div class="panel panel-default">
             <div class="panel-body">
             <form class="form-horizontal content"role="form">
@@ -20,7 +20,7 @@
 
                   <select class="form-control">
                     <option>Computer (6)</option>
-                    <optioN>Mechanical (1)</option>
+                    <option>Mechanical (1)</option>
                     <option>IT (7)</option>
                     <option>Civil (8)</option>
                     <option>Electrical (2)</option>
@@ -34,7 +34,7 @@
 
                   <select class="form-control">
                     <option>First</option>
-                    <optioN>Second</option>
+                    <option>Second</option>
                     <option>Third</option>
                     <option>Fourth</option>
                </select>

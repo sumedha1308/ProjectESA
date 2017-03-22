@@ -11,3 +11,14 @@
   margin: auto;
   width: 70%;
 }
+.panel-transparent {
+	background: none;
+}
+.panel-transparent .panel-body{
+
+}
+
+div.panel-default{
+  background-image : url(backimg.jpg) !important;
+  border-radius: 20px;
+}
