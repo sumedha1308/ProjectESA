@@ -18,7 +18,8 @@ span + span {
   padding: 15px 35px 45px;
   margin: 0 auto;
   background-color: #fff;
-  border: 3px solid rgba(0,0,0,0.1);
+  border: 3px solid skyblue;
+
 
 }
   .form-signin-heading,
@@ -64,7 +65,4 @@ span + span {
 body{
   margin: 0 auto;
 
-}
-.admin-signin{
-  border: 2px solid skyblue;
 }
