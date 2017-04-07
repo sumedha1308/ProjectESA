@@ -1,0 +1,32 @@
+
+.container{
+  margin-top: 30px;
+  margin-bottom: 30px
+}
+div.panelsub
+{
+    padding-bottom:0px;
+margin-bottom: 1px;
+margin-top: 30px;
+border: 2px solid skyblue;
+border-radius: 2px;
+}
+div.panelcon{
+  margin-bottom: 40px;
+  border: 2px solid skyblue;
+
+}
+tr.main-heading{
+column-fill: balance;
+font-style:oblique;;
+background-color: pink;
+color: black;
+}
+
+div.textstyle{
+  column-span: 5;
+
+}
+div.yearheading{
+  background-color: skyblue;
+}

@@ -1,0 +1,10 @@
+div.panel{
+  margin-top: 40px;
+margin-bottom: 20px;
+padding-bottom: -20px;
+background-image: url(backimg.jpg) !important;
+background-size: cover;
+}
+.textstyle{
+  font-size: 17px;
+}

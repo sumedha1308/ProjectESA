@@ -9,39 +9,47 @@
 <link rel="stylesheet" href="css/classwisepagetrue.css"/>
 </head>
 <body>
+  <?php
+  $server='localhost';
+  $dbuser='root';
+  $dbpass='alkesha15';
+  $db='trial';
+  $conn=mysqli_connect($server,$dbuser,$dbpass,$db);
+  $branch="SELECT distinct department from studenttable ";
+  $retvalbranch = mysqli_query( $conn,$branch );
+    $year="SELECT distinct year from studenttable ";
+    $retvalyear = mysqli_query( $conn,$year );
+   ?>
   <div class="container ">
     <div class="row">
-      <div class="col-xs-4 col-xs-push-4">
-          <div class="panel panel-default">
+      <div class="col-xs-4 col-xs-push-4" style="background-color: #ffffff;">
+          <div class="panel panel-default panel-transparent">
             <div class="panel-body">
-            <form class="form-horizontal content"role="form">
+            <form class="form-horizontal content" action="branchyeardata.php" method="post" role="form">
              <div class="form-group">
-                <label for="name">Branch Name</label>
-
-                  <select class="form-control">
-                    <option>Computer (6)</option>
-                    <option>Mechanical (1)</option>
-                    <option>IT (7)</option>
-                    <option>Civil (8)</option>
-                    <option>Electrical (2)</option>
-                    <option>Extc (3)</option>
-                    <option>Chemical (4)</option>
-                    <option>Petrochemical (5)</option>
+                <label for="name">Branch Name :</label>
+                  <!--<input type="text" class="form-control " id="name" placeholder="Branch Name">-->
+                  <select class="form-control" name="department[]">
+                    <?php while($rows=mysqli_fetch_assoc($retvalbranch)){
+                    echo "<option>".$rows['department']."</option>";
+                  }
+                    ?>
                </select>
             </div>
             <div class="form-group">
                 <label for="name">Year</label>
+                  <!--<input type="text" class="form-control" id="name" placeholder="Year">-->
+                  <select class="form-control" name="year[]">
+                    <?php
+                    while ($rows=mysqli_fetch_assoc($retvalyear)) {
 
-                  <select class="form-control">
-                    <option>First</option>
-                    <option>Second</option>
-                    <option>Third</option>
-                    <option>Fourth</option>
+                    echo "<option>".$rows['year']."</option>";
+                  }?>
                </select>
             </div>
             <div class="form-group">
-              <center><a href="branchyeardata.php " type="submit" class="btn btn-default">Submit</a></center>
-</div>
+  <center><input type="submit" name="submit" value="search" class="btn btn-success"></input></center>
+       </div>
           </form>
 
     </div>
@@ -49,7 +57,7 @@
    </div>
    </div>
  </div>
-  <!-- jQuery  -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
 

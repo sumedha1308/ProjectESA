@@ -42,7 +42,7 @@ color: black;
 }
 .to-control
 {
-  margin-left: 30px;
+  margin-left:20px;
   color: black;
 }
 .class-control
@@ -65,4 +65,12 @@ color: black;
 }
 div.text-control{
 color: black;
+}
+input[readonly]{
+  background-color: transparent;
+  border: 0;
+  font-size: 1em;
+}
+.btn-success{
+  border-radius: 25px;
 }
