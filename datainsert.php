@@ -13,6 +13,7 @@
 <script src="js/bootstrap.min.js"></script>
   <script src="clockfiles/jquery.min.js"></script>
   <script src="clockfiles/bootstrap.min.js"></script>
+  <!--this are the file require for clockpicker-->
 <link rel="stylesheet" href="clockfiles/bootstrap-clockpicker.css"/>
 <link rel="stylesheet" href="clockfiles/bootstrap-clockpicker.min.css"/>
 <link rel="stylesheet" href="clockfiles/jquery-clockpicker.css"/>
@@ -36,7 +37,7 @@
       $dbuser='root';
       $dbpass='alkesha15';
       $db='trial';
-      $conn=mysqli_connect($server,$dbuser,$dbpass,$db);
+      $conn=mysqli_connect($server,$dbuser,$dbpass,$db);//database connection
       $depttake= $_POST['department'];
       $yeartake=$_POST['year'];
       if($depttake && $yeartake)
@@ -51,7 +52,7 @@
     }
     }
 
-      $sub="SELECT subject from subjecttable where department='$deptname' AND year='$yearname'";
+      $sub="SELECT subject from subjecttable where department='$deptname' AND year='$yearname'";#subject is selected here
       $retvalsubject = mysqli_query( $conn,$sub);
       $count=mysqli_num_rows($retvalsubject);
     ?>
@@ -119,6 +120,7 @@
                 $endnumber=$_POST['enrollendnumber'];
            ?>
             <div class="form-group ">
+              <!--subject is selected here-->
               <label for="SelectSubejct" class="sub-control" >Select Subject :<font style="color:#FF0000">*</font>
               </label>
               <select class="form-control" name="subject[]">
@@ -135,7 +137,7 @@
 <?php
 $dd=$_POST['department'];
 $yy=$_POST['year'];
- ?>
+ ?>                  <!--classroom is selected here-->
                     <div class="form-group">
                       <label for="SelectClass" class=" class-control">Select classroom :<font style="color:#FF0000">*</font></label>
                           <select name="classroom[]"class="form-control">
@@ -166,6 +168,7 @@ $yy=$_POST['year'];
                                   ?>
                             </div>
                             <div class="form-group">
+                              <!--date is inserted here-->
                             	  <label for="examdate" class="class-control">Date :<font style="color:#FF0000">*</font></label><br />
                               <input class="form-control" placeholder="DD/MM/YYYY" type="date" name="examdate" id="examdate"></input>
                             </div>
@@ -175,6 +178,7 @@ $yy=$_POST['year'];
                          <div class="form-group">
                                   <div class="row">
                                     <div class="col-xs-7">
+                                      <!--time i.e starttime and end time is inserted here-->
                                      	  <label for="examptime1" class="class-control">Start Time:<font style="color:#FF0000">*</font></label>
                                         <div class="input-group clockpicker" data-autoclose="true">
                                             <input  placeholder="HH:MM" type="text" class="form-control ic" name="starttime"  >
@@ -230,7 +234,7 @@ mysqli_query($conn,"INSERT INTO trisub(year,department,enrollnumber,subject,clas
 }
  ?>
 <div class="form-group">
-<center><input type="submit" name="submit" value="insert" class="btn btn-success"></input>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="adminbranchyear.php" class="btn btn-success">back</a></center>
+<center><input type="submit" name="submit" value="insert" class="btn btn-lg btn-success"></input><a href="adminbranchyear.php" class="btn btn-lg btn-success">cancel</a></center>
 </div>
 
 </form>

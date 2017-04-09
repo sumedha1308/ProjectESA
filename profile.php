@@ -13,6 +13,7 @@
   session_start();
   if (isset($_SESSION['adminname']) && isset($_SESSION['password'])) {
     ?>
+    <a href="adminbranchyear.php" class="btn  back-button btn-sm"><span class="glyphicon glyphicon-chevron-left"></span>back</a>
   <div class="container vertical-align">
     <div class="row">
       <div class="col-xs-4 col-xs-push-4" style="background-color: #ffffff;">
@@ -25,8 +26,8 @@
    </center>
    <br>
 
-   <center><label>Alkesha Baikar</label></center>
-   <center><label>Alibag,Raigad</label></center>
+   <center><label>Sumedha Deshpande</label></center>
+   <center><label>Lonere,Raigad</label></center>
 
           </div>
 </form>

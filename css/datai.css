@@ -10,6 +10,8 @@ html,body {
   height:100%;
   width:100%;
   margin:0;
+  background-image : url(panelimage.jpg) !important;
+  background-size: cover;
 }
 body , body {
   display:flex;
@@ -31,7 +33,8 @@ div.panel-default
   margin-right: -70px;
   margin-bottom:40px;
 padding-right: 50px;
-  background-image : url(backimg.jpg) !important;
+border:2px solid skyblue;
+
 border-radius: 20px;
 
 }
@@ -72,5 +75,7 @@ input[readonly]{
   font-size: 1em;
 }
 .btn-success{
-  border-radius: 25px;
+  border-radius: 30px;
+  margin-left: 50px;
+
 }

@@ -18,9 +18,9 @@
   $conn=mysqli_connect($server,$dbuser,$dbpass,$db);
   if(isset($_POST['changepassword']))
   {
-    $currentpassword=$_POST['currentpassword'];
-    $newpassword=$_POST['newpassword'];
-    $confirmpassword=$_POST['confirmpassword'];
+    $currentpassword=$_POST['currentpassword']; #current password
+    $newpassword=$_POST['newpassword'];#new password is taken here
+    $confirmpassword=$_POST['confirmpassword'];#password is confirm here it is use for match with new password enter befor confirm password
   #  echo "$currentpassword";
   #    echo "$newpassword";
   #      echo "$confirmpassword";
@@ -44,6 +44,7 @@
   }
 
   ?>
+    <a href="adminbranchyear.php" class="btn  back-button btn-sm"><span class="glyphicon glyphicon-chevron-left"></span>back</a>
 <div class="container vertical-align">
     <div class="row">
       <div class="col-xs-4 col-xs-push-4" style="background-color: #ffffff;">
@@ -61,8 +62,8 @@
             <input type="password" class="form-control " name="confirmpassword" id="password" autocomplete="off" placeholder="confirm password"></input>
             </div>
             <div class="form-group">
-      <center><button type="submit" name="changepassword" class="btn btn-default">change password</button>&nbsp&nbsp
-        <a href="datainsert.php" type="button" class="btn btn-default">Back</a></center>
+      <center><button type="submit" name="changepassword" class="btn passcg btn-default">change password</button>&nbsp&nbsp
+        <a href="datainsert.php" type="button" class="btn passcg btn-default">Back</a></center>
            </div>
 </form>
 </div>

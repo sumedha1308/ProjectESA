@@ -20,13 +20,23 @@ div.panel-default
   margin-right: 0px;
   margin-bottom:auto;
   padding: 30px 30px 30px 30px;
-  border: 2px solid blue;
+  border: 2px solid skyblue;
   border-radius: 2em;
-  background-image: url(backimg.jpg) !important;
+  background-image: url(display.jpg) !important;
 }
 td.textstyle{
   color: black;
 }
 a.link{
   color: red;
+}
+.back-button{
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: white;
+    border :1.5px solid skyblue;
+    height: 5%;
+    margin-left: 10px;
+    color: black;
+
 }

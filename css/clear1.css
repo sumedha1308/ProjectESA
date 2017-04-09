@@ -13,17 +13,34 @@ body , body {
 
 div.panel-default
 {
-  margin-top: 180px;
+  margin-top: 150px;
   margin-left: -20px;
   margin-right: -20px;
   margin-bottom:100px;
   padding: 30px 30px 30px 30px;
-  border: 2px solid blue;
+  border: 2px solid skyblue;
   border-radius: 20px;
-  background-image: url(backimg.jpg);
+  background-image: url(display.jpg) !important;
 }
 div.form-group{
   color: black;
   font-weight: bold;
   font-style: oblique;
+}
+.form-control{
+  border-radius: 30px;
+  max-width: 200px;
+}
+.btn-lg{
+  border-radius: 20px;
+}
+.back-button{
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: white;
+    border :1.5px solid skyblue;
+    height: 5%;
+    margin-left: 10px;
+    color: black;
+
 }

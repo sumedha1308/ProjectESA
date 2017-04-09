@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="css/lh.css"/>
 </head>
 <body>
+  <a href="selectoneof3.php" class="btn  btn-sm"><span class="glyphicon glyphicon-chevron-left"></span>back</a>
   <div class="container ">
     <div class="row">
       <div class="col-xs-4 col-xs-push-4" style="background-color: #ffffff;">
@@ -21,6 +22,7 @@
              <div class="form-group">
                 <label  class=" control-label"for="name"> Select Branch :</label>
                 <br/>
+                <!--branch selection -->
                   <select class="form-control" name="classroom[]">
                     <option>LH001</option>
                     <optioN>LH002</option>
@@ -35,7 +37,7 @@
               </div>
 
             </div>
-        <center><input type="submit" name="submit" value="search" class="btn btn-success"></input></center>
+        <center><input type="submit" name="submit" value="search" class="btn btn-lg btn-success"></input></center>
   <form>
           </form>
 

@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Exam seating arrangement
-</title>
+<title>Filling of  seating arrangement </title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="stylesheet" href="css/bootstrap.min.css"/>
 <link rel="stylesheet" href="css/bootstrap.css"/>
 <link rel="stylesheet" href="css/classwisepages.css"/>
 </head>
 <body>
-
+<!--php script-->
   <?php
   session_start();
   if (isset($_SESSION['adminname']) && isset($_SESSION['password'])) {
@@ -22,10 +21,10 @@
   $dbuser='root';
   $dbpass='alkesha15';
   $db='trial';
-  $conn=mysqli_connect($server,$dbuser,$dbpass,$db);
-  $branch="SELECT distinct department from studenttable ";
+  $conn=mysqli_connect($server,$dbuser,$dbpass,$db);#database connection
+  $branch="SELECT distinct department from studenttable "; //branch retrival query
   $retvalbranch = mysqli_query( $conn,$branch );
-    $year="SELECT distinct year from studenttable ";
+    $year="SELECT distinct year from studenttable "; //year retrival query
     $retvalyear = mysqli_query( $conn,$year );
    ?>
   <nav class="navbar  navbar-inverse navbar-fixed-top">
@@ -45,10 +44,10 @@
           <li class="dropdown ">
             <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user white"></span><span class="caret"></span></a>
             <ul class="dropdown-menu ">
-              <li  ><a href="profile.php" class="glyphicon glyphicon-user"> Profile</a></li>
-              <li><a href="setting.php" class="glyphicon glyphicon-cog"> Setting</a></li>
-              <li><a href="clear.php" class="glyphicon glyphicon-trash"> ClearDB</a></li>
-              <li><a href="logout.php" class="glyphicon glyphicon-off"> Signout</a></li>
+              <li  ><a href="profile.php" class="glyphicon glyphicon-user"> Profile</a></li><!--profile link-->
+              <li><a href="setting.php" class="glyphicon glyphicon-cog"> Setting</a></li><!--setting link-->
+              <li><a href="clear.php" class="glyphicon glyphicon-trash"> ClearDB</a></li><!--cleardb link-->
+              <li><a href="logout.php" class="glyphicon glyphicon-off"> Signout</a></li><!--signout link-->
             </ul>
           </li>
         </ul>
@@ -63,7 +62,8 @@
             <div class="panel-body">
             <form class="form-horizontal content" action="datainsert.php" method="post"role="form">
              <div class="form-group">
-                <label class="control-label" for="name">Branch Name</label>
+                <label class="control-label" for="name">Branch Name :</label>
+                <!--selection of branch name-->
                 <select class="form-control" name="department[]">
                    <?php while($rows=mysqli_fetch_assoc($retvalbranch)){
                    echo "<option>".$rows['department']."</option>";
@@ -72,7 +72,8 @@
               </select>
             </div>
             <div class="form-group">
-                <label for="name">Year</label>
+                <label for="name">Year :</label>
+                <!--selection of year-->
                 <select class="form-control" name="year[]">
                   <?php
                   while ($rows=mysqli_fetch_assoc($retvalyear)) {
@@ -82,7 +83,7 @@
              </select>
             </div>
             <div class="form-group">
-        <center><input type="submit" name="submit" value="search" class="btn btn-success"></input></center>
+        <center><input type="submit" name="submit" value="select " class="btn btn-lg btn-success"></input></center><!--submit button-->
         </div>
           </form>
 
