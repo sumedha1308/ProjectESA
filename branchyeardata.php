@@ -8,16 +8,25 @@
   <title>Exam Seating Arrangement</title>
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/branchyeardata.css"/>
+  <link rel="stylesheet" href="css/bootstraap.css"/>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
+    <a href="selectoneof3.php" class="btn  back-button btn-sm"><span class="glyphicon glyphicon-chevron-left"></span>back</a>
   <?php
 $server='localhost';
 $dbuser='root';
 $dbpass='alkesha15';
 $db='trial';
-$conn=mysqli_connect($server,$dbuser,$dbpass,$db);
-$depttake= $_POST['department'];
-$yeartake=$_POST['year'];
+$conn=mysqli_connect($server,$dbuser,$dbpass,$db); #database connection here database is trial
+mysqli_query($conn,"UPDATE viewcount set views=views+1 where pagename='branchwisedata'");
+$re=mysqli_query($conn,"SELECT * from viewcount where pagename='branchwisedata' ");
+while ($view=mysqli_fetch_array($re)) {
+?>
+<span class="glyphicon glyphicon-eye-open"></span><?php echo " ".$view['views'];} ?>
+   <?php
+$depttake= $_POST['department']; #department value is taken
+$yeartake=$_POST['year'];#year value is taken
 if($depttake && $yeartake)
 {
 foreach ($depttake as $d )
@@ -29,7 +38,7 @@ foreach ($yeartake as $y )
 $yearname=mysqli_real_escape_string($conn,$y);
 }
 }
-if($yearname=='I')
+if($yearname=='I') #year in words for roman year
 {
 $yeartext='First';
 }
@@ -52,6 +61,7 @@ $yeartext='Fourth';
              <div class="form-group">
                <table class="table ">
                  <tr>
+                   <!--year and department are displayed here-->
                  <th class="yearheading" colspan="4"><center><?php echo "".$yeartext."  Year  ".$deptname.""; ?></center></th>
                  </tr>
                </table>
@@ -59,6 +69,7 @@ $yeartext='Fourth';
 
          </div>
          <?php
+         #subject selection query
          $subquery="SELECT distinct subject,examdate,starttime,endtime from trisub where department='$deptname' AND year='$yearname'";
         $retvalsquery=mysqli_query($conn,$subquery);
         ?>
@@ -99,6 +110,7 @@ $yeartext='Fourth';
     <th colspan="2">LECTURE HALL</th>
     </tr>
      <tr>
+       <!--roll numbers are display here-->
        <td class="textstyle" colspan="2" ><?php
             $count=1;
            while($rollrow=mysqli_fetch_assoc($retvalroll)){
@@ -114,6 +126,7 @@ $yeartext='Fourth';
            }
 
        ?>
+       <!--classroom name is display here-->
        <td class="textstyle" ><?php echo $classroom;?></td>
      </tr>
    </table>
@@ -124,6 +137,5 @@ $yeartext='Fourth';
 </div>
 </div>
 </div>
-
 </body>
 </html>

@@ -20,20 +20,22 @@
     <script src="js/jquery.min.js"></script>
 </head>
 <body>
+  <a href="selectoneof3.php" class="btn  back-button btn-sm"><span class="glyphicon glyphicon-chevron-left"></span>back</a>
   <div class="container vertical-align">
     <div class="row">
       <div class="col-xs-4 col-xs-push-4" style="background-color: #ffffff;">
         <div class="panel panel-default">
             <div class="panel-body">
-            <form class="form-horizontal  content" role="form" id="individual-form" action="individualdata.php" method="post">
+            <form class=" form-horizontal  content" role="form" id="individual-form" action="individualdata.php" method="post">
              <div class="form-group">
-            <label class="style">Enrollment Number</label>
+               <!--rollnumber is enter here-->
+            <label class="style">Enrollment Number :</label>
             <div  class="formgroup">
             <input type="text" class="form-control " id="rollno" name="rollno" placeholder="Enrollment number"></input>
             </div>
           </div>
             <div class="form-group">
-      <center><input type="submit" name="submit" value="search" class="btn btn-success"></input></center>
+      <center><input type="submit" name="submit" value="search" class="btn btn-sm btn-success"></input></center>
            </div>
 </form>
 </div>
@@ -42,25 +44,4 @@
 </div>
 </div>
 </body>
-<script type="text/javascript">
-      $(document).ready(function () {
-	        var validator = $("#individual-form").bootstrapValidator({
-	    fields :{
-		       rollno: {
-			         message : "enrollment number is require",
-					 validators :{
-					      notEmpty : {
-						       message : "Please provide an enrollment number",
-						             }
-					             }
-
-				      },
-
-
-
-				 }
-
-	  });
-	  });
-	  </script>
 </html>

@@ -8,7 +8,7 @@
 </head>
 <body>
   <?php
- header('refresh:2 ;url= firstpage.php');
+ header('refresh:1 ;url= firstpageresponse.php');
  $msg="you are successfully logout";
 echo "<script type='text/javascript'>alert('$msg');</script> ";
    ?>

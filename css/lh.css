@@ -10,18 +10,29 @@
 .content
 {
   margin: auto;
-  width: 70%;
+  width: 60%;
 }
 .panel-transparent {
 	background: none;
 }
 div.panel{
-  background-image: url(backimg.jpg) !important;
+  background-image: url(display.jpg) !important;
     border-radius: 20px;
     border-color: skyblue;
 }
 div.panel-default{
-  background-image : url(backimg.jpg) !important;
+  background-image : url(display.jpg) !important;
   border-radius: 20px;
   border-color: 2px solid skyblue;
+}
+.btn-lg{
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.btn-sm{
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: white;
+  margin-left: 10px;
+  border :1px solid skyblue;
 }

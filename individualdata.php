@@ -5,27 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Exam Seating Arrang</title>
+  <title>My exam seating arrangement</title>
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/individual.css"/>
 </head>
 <body>
-
+<a href="selectoneof3.php" class="btn  back-button btn-sm"><span class="glyphicon glyphicon-chevron-left"></span>back</a>
   <?php
      $server='localhost';
      $dbuser='root';
      $dbpass='alkesha15';
      $db='trial';
-    $conn=mysqli_connect($server,$dbuser,$dbpass,$db);
+    $conn=mysqli_connect($server,$dbuser,$dbpass,$db);//database connection
+    mysqli_query($conn,"UPDATE viewcount set views=views+1 where pagename='individualdata'");
+    $re=mysqli_query($conn,"SELECT * from viewcount where pagename='individualdata' ");
+    while ($view=mysqli_fetch_array($re)) {
+    ?>
+    <span class="glyphicon glyphicon-eye-open"></span><?php echo " ".$view['views'];} ?>
 
+    <?php  if(isset($_POST["submit"])){
     $roll=$_POST["rollno"];
-    $sql = "SELECT rollno,stdname,department,year from studenttable where rollno=$roll";
+    $sql = "SELECT rollno,stdname,department,year from studenttable where rollno=$roll"; //rollno,studentname department and year is selected here
       $retval = mysqli_query( $conn,$sql );
     $row=mysqli_fetch_array($retval);
-        $rollno=$row[0];
-        $stdname=$row[1];
-        $department=$row[2];
-        $year=$row[3];
+        $rollno=$row[0]; #rollnumber
+        $stdname=$row[1];#student name
+        $department=$row[2]; #department
+        $year=$row[3]; #student year
      ?>
     <div class="container vertical-align">
       <div class="row">
@@ -53,7 +59,7 @@
                       <td class="textstyle"><?php echo $year; ?></td>
                     </tr>
                     <tr>
-                      <td><h5><b>Unit test second:</b></h5><td>
+                      <td><h5><b>Unit test :</b></h5><td>
                       <td class="textstyle">second</td>
                     </tr>
                 </table>
@@ -70,19 +76,23 @@
              $subject=$rows['subject'];
              $number=$rollno;
              $sub=$subject;
+             #date retrival
              $dateq="SELECT examdate from trisub where enrollnumber='$number' AND subject='$sub'";
              $retvaldate=mysqli_query($conn,$dateq);
             $rowd=mysqli_fetch_assoc($retvaldate);
                $edate=$rowd['examdate'];
-               $endtime=$rowet['endtime'];
+               #$endtime=$rowet['endtime'];
+               #starttime is calculated
              $starttimeq="SELECT starttime from trisub where enrollnumber='$rollno' AND subject='$subject'";
              $retvalstarttime=mysqli_query($conn,$starttimeq);
                $rowst=mysqli_fetch_array($retvalstarttime);
                $starttime=$rowst['starttime'];
+               #end time calculated
              $endtimeq="SELECT endtime from trisub where enrollnumber='$rollno' AND subject='$subject'";
              $retvalendtime=mysqli_query($conn,$endtimeq);
                $rowet=mysqli_fetch_array($retvalendtime);
                $endtime=$rowet['endtime'];
+               #classroom evaluation
              $classq="SELECT classroom from trisub where enrollnumber='$rollno' AND subject='$subject'";
              $retvalclass=mysqli_query($conn,$classq);
              $rowclass=mysqli_fetch_assoc($retvalclass);
@@ -94,19 +104,19 @@
                 <table class="table table-hover">
                   <tr>
                     <td><b>Classroom :</b><td>
-                    <td class="textstyle"><?php echo $class ?></td>
+                    <td class="textstyle"><?php echo $class ?></td><!--classroom is display here-->
                   </tr>
                     <tr>
                       <td><b>Exam Date :</b><td>
-                      <td class="textstyle"><?php echo $edate ?></td>
+                      <td class="textstyle"><?php echo $edate ?></td><!--date is display here-->
                     </tr>
                     <tr>
                       <td><b>Time :</b><td>
-                      <td class="textstyle"><?php echo $starttime." to ".$endtime ?></td>
+                      <td class="textstyle"><?php echo $starttime." to ".$endtime ?></td><!--start time and end time is display here-->
                     </tr>
                     <tr>
                       <td><b>Subject Name :</b><td>
-                      <td class="textstyle"><?php echo $subject ?></td>
+                      <td class="textstyle"><?php echo $subject ?></td><!--subject is display here-->
                     </tr>
                   </table>
                 </div>
@@ -114,7 +124,7 @@
   </div>
   </div>
   <?php
-  } ?>
+} }?>
   </div>
   </div>
   </div>
