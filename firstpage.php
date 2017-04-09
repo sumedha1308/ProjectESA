@@ -7,7 +7,7 @@
   <title>Exam Seating Arrangement</title>
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!--  CSS -->
+  <!-- Custom CSS -->
   <link href="css/full.css" rel="stylesheet">
   <link rel="stylesheet" href="css/image.css"/>
 </head>
@@ -15,7 +15,7 @@
   <!-- Navigation -->
    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 <div class="container">
-
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>

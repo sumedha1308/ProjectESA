@@ -14,7 +14,7 @@ body , body {
   margin:auto;
 }
 
-.panel-default
+div.panel-default
 {
   margin-top: 140px;
   margin-left: 10px;
@@ -24,5 +24,29 @@ body , body {
   padding-right:50px;
   padding-bottom:50px;
   padding-top:50px;
+  background-image: url(display.jpg) !important;
+  border-radius: 20px;
+
+}
+label.style{
+  color: black;
+}
+.form-control{
+  border-radius: 10px;
+}
+.btn-success{
+  border-radius: 20px;
+  height: 40px;
+  width: 80px;
+  font-size: 16px;
+}
+.back-button{
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: white;
+    border :1.5px solid skyblue;
+    height: 5%;
+    margin-left: 10px;
+    color: black;
 
 }

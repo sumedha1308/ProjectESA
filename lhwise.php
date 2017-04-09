@@ -8,48 +8,43 @@
 <title>Exam Seating Arrangement
 </title>
 <link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/bootstrap.css"/>
 <link rel="stylesheet" href="css/lh.css"/>
 </head>
 <body>
-  <div class="container">
-    <div class="panel panel-default vertical-center">
-  <div class="panel-body">
-      <div clas="container ">
-      <form class="form-horizontal content" role="form">
-       <div class="form-group">
-         <div class="row">
-        <label  class=" control-label"for="name">  Select Branch :</label>
-        <br/>
-          <select class="form-control ">
-            <option>LH001</option>
-            <optioN>LH002</option>
-            <option>LH003</option>
-            <option>LH004</option>
-            <option>LH005</option>
-            <option>LH006</option>
-            <option>LH101</option>
-            <optioN>LH102</option>
-            <option>LH103</option>
-            <option>LH104</option>
-            <option> LH105</option>
-            <option>LH106</option>
-            <option>LH201</option>
-            <optioN>LH202</option>
-            <option>LH203</option>
-            <option>LH204</option>
-            <option>LH205</option>
-            <option>LH206</option>
-            <option>LH207</option>
-            <option>LH208</option>
-            <option>LH210</option>
-       </select>
-    </div>
-  </div>
-        <center><a href="lecturehallwisedata.php" type="submit" class="btn btn-default">Submit</a></center>
+  <a href="selectoneof3.php" class="btn  btn-sm"><span class="glyphicon glyphicon-chevron-left"></span>back</a>
+  <div class="container ">
+    <div class="row">
+      <div class="col-xs-4 col-xs-push-4" style="background-color: #ffffff;">
+          <div class="panel panel-default">
+            <div class="panel-body">
+            <form class="form-horizontal content" action="lecturehallwisedata.php" method="post" role="form">
+             <div class="form-group">
+                <label  class=" control-label"for="name"> Select Branch :</label>
+                <br/>
+                <!--branch selection -->
+                  <select class="form-control" name="classroom[]">
+                    <option>LH001</option>
+                    <optioN>LH002</option>
+                    <option>LH003</option>
+                    <option>LH004</option>
+                    <option>LH005</option>
+                    <option>LH006</option>
+                    <option>LH101</option>
+                    <optioN>LH102</option>
+                    <option>LH210</option>
+               </select>
+              </div>
+
+            </div>
+        <center><input type="submit" name="submit" value="search" class="btn btn-lg btn-success"></input></center>
   <form>
-  </div>
-</div>
-</div>
-</div>
+          </form>
+
+    </div>
+    </div>
+   </div>
+   </div>
+ </div>
 </body>
 </html>

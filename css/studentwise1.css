@@ -20,3 +20,10 @@ body , body {
   padding: 30px 30px 30px 30px;
   border: 2px solid grey;
 }
+
+.panel-transparent .panel-body{
+    background: rgba(122, 130, 136, 0.2)!important;
+}
+.panel-transparent {
+	background: none;
+}

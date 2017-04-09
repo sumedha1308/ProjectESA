@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Exam Seating Arrangement</title>
+  <title>Profile</title>
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/profile.css"/>
 </head>
 <body>
+  <?php
+  session_start();
+  if (isset($_SESSION['adminname']) && isset($_SESSION['password'])) {
+    ?>
+    <a href="adminbranchyear.php" class="btn  back-button btn-sm"><span class="glyphicon glyphicon-chevron-left"></span>back</a>
   <div class="container vertical-align">
     <div class="row">
       <div class="col-xs-4 col-xs-push-4" style="background-color: #ffffff;">
@@ -21,8 +26,8 @@
    </center>
    <br>
 
-   <center><label>Alkesha Baikar</label></center>
-   <center><label>Alibag,Raigad</label></center>
+   <center><label>Sumedha Deshpande</label></center>
+   <center><label>Lonere,Raigad</label></center>
 
           </div>
 </form>
@@ -31,5 +36,10 @@
 </div>
 </div>
 </div>
+<?php }
+else{
+  $msg="you are not login!";
+  echo "<script type='text/javascript'>alert('$msg');</script>";
+}?>
 </body>
 </html>
