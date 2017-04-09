@@ -1,13 +1,16 @@
 @import "bourbon";
 body {
 	background: #fff;
+background-image: url(display.jpg) !important;
+background-size:cover;
+height: 110%;
 }
-
 .wrapper {
-	margin-top: 60px;
+	margin-top: 28px;
   margin-bottom: 60px;
   margin-left: 60px;
   margin-right: 60px;
+
 }
 span + span {
     margin-left: 10px;
@@ -17,7 +20,10 @@ span + span {
   padding: 15px 35px 45px;
   margin: 0 auto;
   background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 2px solid skyblue;
+  border-radius: 30px;
+
+
 }
   .form-signin-heading,
 	.checkbox {
@@ -38,6 +44,7 @@ span + span {
 		&:focus {
 		  z-index: 2;
 		}
+
 	}
 
   img{
@@ -45,16 +52,30 @@ span + span {
   }
 	input[type="text"] {
 	  margin-bottom: 0px;
-	  border-bottom-left-radius: 0;
-	  border-bottom-right-radius: 0;
+	  border-bottom-left-radius: 2;
+	  border-bottom-right-radius: 2;
 	}
 
 	input[type="password"] {
 	  margin-bottom: 20px;
-	  border-top-left-radius: 0;
-	  border-top-right-radius: 0;
+	  border-top-left-radius: 2;
+	  border-top-right-radius: 2;
 	}
 
   .forgot-pass {
       margin-left: 7em;
   }
+body{
+  margin: 0 auto;
+
+}
+.back-button{
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: white;
+    border :1.5px solid skyblue;
+    height: 5%;
+    margin-left: 10px;
+    color: black;
+
+}

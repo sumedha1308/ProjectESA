@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Exam Seating Arrangement</title>
-
+    <title>contact us</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/a.css">
   </head>
   <body>
+      <a href="firstpageresponse.php" class="btn  back-button btn-sm"><span class="glyphicon glyphicon-chevron-left"></span>back</a>
     <br><br><br><br>
     <div class="container">
         <div class="row">
@@ -23,7 +23,7 @@
                             <div class="col-lg-12">
                                 <div class="row">
                                     <div class="col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
-                                        <img class="img-circle img-responsive" src="images/pecock.jpg">
+                                        <img class="img-circle img-responsive"  src="images/admincontact.jpg">
                                     </div>
                                 </div>
                             </div>
@@ -33,10 +33,10 @@
                                 <div class="row">
                                     <div class="centered-text col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
 
-                                            <h2> <span itemprop="name">Alkesha Baikar</span></h2>
-                                                <i class="fa fa-map-marker"></i> <span itemprop="addressRegion">Alibag,Raigad</span>
-                                            </p>
-                                            <p itemprop="email"> <i class="fa fa-envelope"> </i> <a href="mailto:baikaralkesha@gmail.com">baikaralkesha@gmail.com</a> </p>
+                                            <h2> <span itemprop="name" class="textcolor">Alkesha Baikar</span></h2>
+                                                <i class="fa fa-map-marker"></i> <span itemprop="addressRegion" class="add">Alibag,Raigad</span>
+
+                                            <p itemprop="email"> <i class="fa fa-envelope"> </i> <a  class="link" href="mailto:baikaralkesha@gmail.com">baikaralkesha@gmail.com</a> </p>
                                         </div>
                                     </div>
                                 </div>
@@ -50,22 +50,22 @@
                                 <div class="row">
                                     <div class="col-lg-3 col-lg-push-1  social-btn-holder">
 
-                                          <a type="button" title="google" class="btn btn-social  btn-block btn-google btn-circle" target="_BLANK" href="http://plus.google.com/+You"><i class="fa fa-google"></i></a>
+                                          <a type="button" title="google" class="btn btn-social  btn-block btn-google btn-circle" target="_BLANK" href="https://plus.google.com/u/0/107696981099117822129"><i class="fa fa-google"></i></a>
                                     </div>
                                     <div class="col-lg-3 col-lg-push-1  n-circle  social-btn-holder">
 
-                                            <a type="button" title="linkedin" class="btn btn-social  btn-block btn-linkedin btn-circle" target="_BLANK" href="http://www.linkedin.com/username"><i class="fa fa-linkedin"></i></a>
-</div>
+                                            <a type="button" title="linkedin" class="btn btn-social  btn-block btn-linkedin btn-circle" target="_BLANK" href="https://www.linkedin.com/in/alkesha-baikar-12932a128/"><i class="fa fa-linkedin"></i></a>
+                                   </div>
 
 
 
                                     <div class="col-lg-3 col-lg-push-1 n-circle social-btn-holder">
 
-                                        <a type="button" title="github" class="btn btn-social  btn-block btn-github btn-circle" target="_BLANK" href="http://github.com/yourid"><i class="fa fa-github"></i></a>
+                                        <a type="button" title="github" class="btn btn-social  btn-block btn-github btn-circle" target="_BLANK" href="http://github.com/alkeshab"><i class="fa fa-github"></i></a>
                                     </div>
                                     <div class="col-lg-3 col-lg-push-1  n-circle    social-btn-holder">
 
-                                            <a type="button" title="stackoverflow" class="btn btn-social  btn-block btn-stackoverflow btn-circle" target="_BLANK" href="http://stackflow/com/users/yourid/yourid"><i class="fa fa-stack-overflow"></i></a>
+                                            <a type="button" title="stackoverflow" class="btn btn-social  btn-block btn-stackoverflow btn-circle" target="_BLANK" href="https://stackoverflow.com/users/7841346/alkesha-baikar"><i class="fa fa-stack-overflow"></i></a>
 
 
 

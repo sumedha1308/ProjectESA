@@ -1,6 +1,5 @@
 body{margin:40px;}
 
-
 .btn-circle {
   width: 30px;
   height: 30px;
@@ -8,7 +7,7 @@ body{margin:40px;}
   padding: 6px 0;
   font-size: 12px;
   line-height: 1.428571429;
-  border-radius: 15px;
+  border-radius: 20px;
 background-color: red;
 }
 .btn-stackoverflow{
@@ -34,6 +33,7 @@ background-color:#0e76a8;
   display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -20px;
 
 }
 
@@ -54,15 +54,38 @@ background-color:#0e76a8;
   color: white;
   opacity:1;
 }
-.panel-default
+div.panel-default
 {
   border-style: solid;
   border-width: 2px;
-  border-color: black;
+  border-color: skyblue;
+  border-radius: 30px;
+  background-image: url(display.jpg) !important;
 }
-.panel-footer
+div.panel-footer
 {
   border-style: solid;
   border-width: 2px;
-  border-color: black;
+  border-color: skyblue;
+  background-image: url(display.jpg) !important;
+  border-radius: 30px;
+
+}
+span.add,span.textcolor{
+font-weight: bold;
+color: black;
+}
+a.link
+{
+  color: black;
+}
+.back-button{
+    border-radius: 20px;
+    background-color: white;
+    border :1.5px solid skyblue;
+    height: 5%;
+    margin-top: -30px;
+    margin-left:-20px;
+    color: black;
+
 }

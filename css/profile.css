@@ -16,7 +16,7 @@ body , body {
 
 .panel-default
 {
-  margin-top: 140px;
+  margin-top: 100px;
   margin-left: 10px;
   margin-right: 0px;
   margin-bottom:auto;
@@ -24,5 +24,17 @@ body , body {
   padding-right:50px;
   padding-bottom:90px;
   padding-top:50px;
+  border-radius: 20px;
+  background-image: url(panelimage.jpg) !important;
+  border: 2px solid skyblue;
+}
+.back-button{
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: white;
+    border :1.5px solid skyblue;
+    height: 5%;
+    margin-left: 10px;
+    color: black;
 
 }
